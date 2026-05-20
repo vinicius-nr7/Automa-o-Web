@@ -1,0 +1,28 @@
+{
+  "name": "automacao-codeceptjs",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes web com CodeceptJS, WebDriverIO e Chrome",
+  "license": "ISC",
+  "author": "Vinicius Rodrigues",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "test:navegacao": "npx codeceptjs run Testes/navegacao_test.js --steps",
+    "test:cadastro": "npx codeceptjs run Testes/cadastro_test.js --steps",
+    "test:login": "npx codeceptjs run Testes/login_test.js --steps",
+    "test:carrinho": "npx codeceptjs run Testes/carrinho_test.js --steps",
+    "test:checkout": "npx codeceptjs run Testes/checkout_test.js --steps"
+  },
+  "keywords": [
+    "codeceptjs",
+    "webdriverio",
+    "automacao",
+    "testes"
+  ],
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^8.14.0",
+    "codeceptjs": "^3.7.9",
+    "webdriverio": "^9.27.1"
+  }
+}
