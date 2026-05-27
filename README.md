@@ -9,15 +9,15 @@ O framework principal é o CodeceptJS, com Playwright configurado para abrir o n
 
 ## Imagens em Destaque
 
-Abaixo estão algumas capturas de tela geradas pelo projeto, exibidas diretamente no GitHub como destaque visual do fluxo de testes:
+Abaixo estão as capturas de tela do projeto em uma galeria, exibidas diretamente no GitHub para destacar as evidências visuais dos testes.
 
-![Execução de teste 1](images-docs/Captura%20de%20tela%202026-05-27%20141022.jpg)
+| Imagem 1 | Imagem 2 | Imagem 3 | Imagem 4 |
+| --- | --- | --- | --- |
+| ![Captura 1](images-docs/Captura%20de%20tela%202026-05-27%20141022.jpg) | ![Captura 2](images-docs/Captura%20de%20tela%202026-05-27%20141323.jpg) | ![Captura 3](images-docs/Captura%20de%20tela%202026-05-27%20141431.jpg) | ![Captura 4](images-docs/Captura%20de%20tela%202026-05-27%20141506.jpg) |
 
-![Execução de teste 2](images-docs/Captura%20de%20tela%202026-05-27%20141323.jpg)
-
-![Execução de teste 3](images-docs/Captura%20de%20tela%202026-05-27%20141431.jpg)
-
-![Execução de teste 4](images-docs/Captura%20de%20tela%202026-05-27%20141506.jpg)
+| Imagem 5 | Imagem 6 | Imagem 7 | Imagem 8 |
+| --- | --- | --- | --- |
+| ![Captura 5](images-docs/Captura%20de%20tela%202026-05-27%20141618.jpg) | ![Captura 6](images-docs/Captura%20de%20tela%202026-05-27%20141643.jpg) | ![Captura 7](images-docs/Captura%20de%20tela%202026-05-27%20141721.jpg) | ![Captura 8](images-docs/Captura%20de%20tela%202026-05-27%20141744.jpg) |
 
 ## Conteúdo do Projeto
 
