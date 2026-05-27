@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5042","criar novo usuário com nome único","","2026-05-27","passed","2026-05-27","","Cadastro Demo Blaze:","Cadastro Demo Blaze:","criar novo usuário com nome único"
+"","4108","tentar cadastrar usuário já existente","","2026-05-27","passed","2026-05-27","","Cadastro Demo Blaze:","Cadastro Demo Blaze:","tentar cadastrar usuário já existente"
+"","8354","finalizar compra de produto","","2026-05-27","passed","2026-05-27","","Checkout Demo Blaze:","Checkout Demo Blaze:","finalizar compra de produto"
+"","3147","login com credenciais válidas","","2026-05-27","passed","2026-05-27","","Login Demo Blaze:","Login Demo Blaze:","login com credenciais válidas"
+"","3000","validar categorias Phones, Laptops e Monitors","","2026-05-27","passed","2026-05-27","","Navegação Demo Blaze:","Navegação Demo Blaze:","validar categorias Phones, Laptops e Monitors"
+"","5855","adicionar produto ao carrinho","","2026-05-27","passed","2026-05-27","","Carrinho Demo Blaze:","Carrinho Demo Blaze:","adicionar produto ao carrinho"
+"","3630","login com credenciais inválidas","","2026-05-27","passed","2026-05-27","","Login Demo Blaze:","Login Demo Blaze:","login com credenciais inválidas"

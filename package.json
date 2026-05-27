@@ -21,8 +21,11 @@
     "testes"
   ],
   "devDependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
     "@wdio/selenium-standalone-service": "^8.14.0",
+    "allure-commandline": "^2.42.0",
     "codeceptjs": "^3.7.9",
+    "playwright": "^1.60.0",
     "webdriverio": "^9.27.1"
   }
 }

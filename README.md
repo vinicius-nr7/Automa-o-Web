@@ -1,103 +1,88 @@
-# automacao-codeceptjs
+automacao-codeceptjs
+Repositório: [https://github.com/vinicius-nr7/Automacao-Codeceptjs.git]
 
-Repositório: `https://github.com/vinicius-nr7/Automa-o-Web.git`
+Automação de testes web para o site https://www.demoblaze.com utilizando CodeceptJS e Playwright.
 
-Automação de testes web usando CodeceptJS e WebDriverIO para o site `https://www.demoblaze.com`.
+Estrutura do projeto
+codecept.conf.js — Configuração principal do CodeceptJS.
 
-## Estrutura do projeto
+package.json — Dependências e scripts de execução do projeto.
 
-- `codecept.conf.js` — configuração principal do CodeceptJS
-- `package.json` — dependências do projeto
-- `Testes/` — arquivos de testes e steps
-- `Testes/steps_file.js` — objeto `I` e passos reutilizáveis
-- `output/` — relatórios e screenshots gerados
+Testes/ — Arquivos de testes (Cadastro, Login, Carrinho, Checkout, Navegação).
 
-## Pré-requisitos
+Testes/steps_file.js — Definições de passos customizados.
 
-1. Node.js instalado
-2. Google Chrome instalado
-3. Terminal aberto na pasta raiz do projeto
-4. Conexão com internet (o site de teste é online)
+output/ — Capturas de tela de falhas.
 
-## Instalação
+allure-results/ — Dados brutos das execuções (gerados automaticamente).
 
+allure-report/ — Relatórios visuais gerados.
+
+Pré-requisitos
+Node.js instalado.
+
+Google Chrome instalado.
+
+Terminal aberto na pasta raiz do projeto.
+
+Instalação
 No terminal, execute:
 
-```bash
+Bash
 npm install
-```
+Isso instalará o codeceptjs, playwright, @codeceptjs/allure-legacy e allure-commandline.
 
-Isso instala o `codeceptjs`, `webdriverio` e outras dependências.
+Como rodar os testes
+Rodar todos os testes
+Bash
+npm run test
+Rodar testes específicos por suíte
+O projeto possui scripts configurados para facilitar a execução:
 
-## Como rodar todos os testes
+npm run test:navegacao
 
-No terminal, na raiz do projeto:
+npm run test:cadastro
 
-```bash
+npm run test:login
+
+npm run test:carrinho
+
+npm run test:checkout
+
+Rodar cenário específico (Filtro por nome)
+Você pode usar o --grep para buscar um cenário específico:
+
+Bash
+npx codeceptjs run --grep "NOME_DO_CENARIO" --steps
+Documentação Visual com Allure Report
+O projeto utiliza o Allure Report para gerar dashboards detalhados.
+
+1. Executar testes e gerar dados
+Ao rodar seus testes normalmente, o plugin criará os arquivos de log na pasta allure-results:
+
+Bash
 npx codeceptjs run --steps
-```
+2. Gerar o relatório visual
+Transforme os resultados em um painel interativo navegável:
 
-Esse comando:
-- carrega `codecept.conf.js`
-- encontra os arquivos `./Testes/*_test.js`
-- executa todos os cenários
-- mostra cada passo no terminal
+Bash
+npx allure-commandline generate allure-results -o allure-report --clean
+3. Abrir o relatório
+Visualize o dashboard completo no seu navegador padrão:
 
-## Como rodar apenas um arquivo de teste
+Bash
+npx allure-commandline open allure-report
+Observações
+O navegador configurado é o chromium.
 
-Para executar apenas `navegacao_test.js`:
+O tempo de espera inteligente (smartWait) está configurado para 5000ms.
 
-```bash
-npx codeceptjs run Testes/navegacao_test.js --steps
-```
+Sempre que houver falha, o sistema gera automaticamente uma captura de tela na pasta output.
 
-Substitua `navegacao_test.js` por outro arquivo de teste na pasta `Testes`.
+Como enviar para o GitHub:
+Após salvar este conteúdo no README.md, execute no seu terminal:
 
-## Como rodar apenas um cenário específico
-
-Use `--grep` com o texto do nome do cenário. Exemplo:
-
-```bash
-npx codeceptjs run --grep "validar categorias Phones, Laptops e Monitors" --steps
-```
-
-Ou, se quiser limitar ao arquivo:
-
-```bash
-npx codeceptjs run Testes/navegacao_test.js --grep "validar categorias Phones, Laptops e Monitors" --steps
-```
-
-## Como rodar por partes
-
-1. Rodar todos os testes: `npx codeceptjs run --steps`
-2. Rodar um único arquivo: `npx codeceptjs run Testes/<arquivo> --steps`
-3. Rodar um cenário específico: `npx codeceptjs run --grep "<texto do cenário>" --steps`
-
-## Scripts npm disponíveis
-
-O `package.json` já inclui os seguintes scripts:
-
-```json
-"scripts": {
-  "test": "npx codeceptjs run --steps",
-  "test:navegacao": "npx codeceptjs run Testes/navegacao_test.js --steps",
-  "test:cadastro": "npx codeceptjs run Testes/cadastro_test.js --steps",
-  "test:login": "npx codeceptjs run Testes/login_test.js --steps",
-  "test:carrinho": "npx codeceptjs run Testes/carrinho_test.js --steps",
-  "test:checkout": "npx codeceptjs run Testes/checkout_test.js --steps"
-}
-```
-
-Depois, execute:
-- `npm run test`
-- `npm run test:navegacao`
-- `npm run test:cadastro`
-- `npm run test:login`
-- `npm run test:carrinho`
-- `npm run test:checkout`
-
-## Observações
-
-- O navegador configurado em `codecept.conf.js` é `chrome`
-- Os relatórios/screenshots são gerados em `output/`
-- Use `--grep` para filtrar cenários específicos
+Bash
+git add README.md
+git commit -m "docs: atualização completa da documentação e guia do Allure Report"
+git push origin main

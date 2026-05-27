@@ -1,0 +1,127 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1779900842164' stop='1779900850707'>
+    <name>Checkout Demo Blaze:</name>
+    <title>Checkout Demo Blaze:</title>
+    <test-cases>
+        <test-case start='1779900842165' status='passed' stop='1779900850685'>
+            <name>finalizar compra de produto</name>
+            <title>finalizar compra de produto</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779900842495' status='passed' stop='1779900844152'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900844152' status='passed' stop='1779900845585'>
+                    <name>I click "//a[text()='Samsung galaxy s6']"</name>
+                    <title>I click "//a[text()='Samsung galaxy s6']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900845585' status='passed' stop='1779900846439'>
+                    <name>I wait for element "//a[text()='Add to cart']", 10</name>
+                    <title>I wait for element "//a[text()='Add to cart']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900846439' status='passed' stop='1779900846587'>
+                    <name>I click "//a[text()='Add to cart']"</name>
+                    <title>I click "//a[text()='Add to cart']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900846587' status='passed' stop='1779900847052'>
+                    <name>I see in popup "Product added"</name>
+                    <title>I see in popup "Product added"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900847053' status='passed' stop='1779900847053'>
+                    <name>I accept popup</name>
+                    <title>I accept popup</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900847053' status='passed' stop='1779900847384'>
+                    <name>I click "//a[text()='Cart']"</name>
+                    <title>I click "//a[text()='Cart']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900847384' status='passed' stop='1779900848256'>
+                    <name>I wait for element "//td[contains(text(),'Samsung galaxy s6')]", 10</name>
+                    <title>I wait for element "//td[contains(text(),'Samsung galaxy s6')]", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900848256' status='passed' stop='1779900848402'>
+                    <name>I click "//button[text()='Place Order']"</name>
+                    <title>I click "//button[text()='Place Order']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900848402' status='passed' stop='1779900848718'>
+                    <name>I fill field "#name", "Vinicius"</name>
+                    <title>I fill field "#name", "Vinicius"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900848719' status='passed' stop='1779900848983'>
+                    <name>I fill field "#country", "Brasil"</name>
+                    <title>I fill field "#country", "Brasil"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900848984' status='passed' stop='1779900849283'>
+                    <name>I fill field "#city", "São Paulo"</name>
+                    <title>I fill field "#city", "São Paulo"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900849284' status='passed' stop='1779900849721'>
+                    <name>I fill field "#card", "1234567890123456"</name>
+                    <title>I fill field "#card", "1234567890123456"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900849721' status='passed' stop='1779900849902'>
+                    <name>I fill field "#month", "05"</name>
+                    <title>I fill field "#month", "05"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900849902' status='passed' stop='1779900850134'>
+                    <name>I fill field "#year", "2026"</name>
+                    <title>I fill field "#year", "2026"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900850134' status='passed' stop='1779900850286'>
+                    <name>I click "//button[text()='Purchase']"</name>
+                    <title>I click "//button[text()='Purchase']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900850286' status='passed' stop='1779900850292'>
+                    <name>I see "Thank you for your purchase!"</name>
+                    <title>I see "Thank you for your purchase!"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900850292' status='passed' stop='1779900850685'>
+                    <name>I click "//button[text()='OK']"</name>
+                    <title>I click "//button[text()='OK']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

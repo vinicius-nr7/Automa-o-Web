@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1779902574088' stop='1779902584405'>
+    <name>Cadastro Demo Blaze:</name>
+    <title>Cadastro Demo Blaze:</title>
+    <test-cases>
+        <test-case start='1779902575198' status='passed' stop='1779902580240'>
+            <name>criar novo usuário com nome único</name>
+            <title>criar novo usuário com nome único</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779902575643' status='passed' stop='1779902578577'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902578577' status='passed' stop='1779902578786'>
+                    <name>I click "//a[text()='Sign up']"</name>
+                    <title>I click "//a[text()='Sign up']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902578786' status='passed' stop='1779902578829'>
+                    <name>I wait for visible "#signInModal", 10</name>
+                    <title>I wait for visible "#signInModal", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902578829' status='passed' stop='1779902579343'>
+                    <name>I fill field "#sign-username", "usuario1779902575636"</name>
+                    <title>I fill field "#sign-username", "usuario1779902575636"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902579344' status='passed' stop='1779902579605'>
+                    <name>I fill field "#sign-password", "senha123"</name>
+                    <title>I fill field "#sign-password", "senha123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902579605' status='passed' stop='1779902579770'>
+                    <name>I click "//button[text()='Sign up']"</name>
+                    <title>I click "//button[text()='Sign up']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902579770' status='passed' stop='1779902580239'>
+                    <name>I accept popup</name>
+                    <title>I accept popup</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1779902580279' status='passed' stop='1779902584387'>
+            <name>tentar cadastrar usuário já existente</name>
+            <title>tentar cadastrar usuário já existente</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779902580614' status='passed' stop='1779902582288'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902582288' status='passed' stop='1779902582502'>
+                    <name>I click "//a[text()='Sign up']"</name>
+                    <title>I click "//a[text()='Sign up']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902582502' status='passed' stop='1779902582545'>
+                    <name>I wait for visible "#signInModal", 10</name>
+                    <title>I wait for visible "#signInModal", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902582545' status='passed' stop='1779902582887'>
+                    <name>I fill field "#sign-username", "novoUsuario"</name>
+                    <title>I fill field "#sign-username", "novoUsuario"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902582887' status='passed' stop='1779902583153'>
+                    <name>I fill field "#sign-password", "senha123"</name>
+                    <title>I fill field "#sign-password", "senha123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902583153' status='passed' stop='1779902583304'>
+                    <name>I click "//button[text()='Sign up']"</name>
+                    <title>I click "//button[text()='Sign up']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902583304' status='passed' stop='1779902584386'>
+                    <name>I accept popup</name>
+                    <title>I accept popup</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1779902584423' stop='1779902590299'>
+    <name>Carrinho Demo Blaze:</name>
+    <title>Carrinho Demo Blaze:</title>
+    <test-cases>
+        <test-case start='1779902584426' status='passed' stop='1779902590281'>
+            <name>adicionar produto ao carrinho</name>
+            <title>adicionar produto ao carrinho</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779902584699' status='passed' stop='1779902586420'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902586420' status='passed' stop='1779902587277'>
+                    <name>I wait for element "//a[text()='Samsung galaxy s6']", 10</name>
+                    <title>I wait for element "//a[text()='Samsung galaxy s6']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902587277' status='passed' stop='1779902587617'>
+                    <name>I click "//a[text()='Samsung galaxy s6']"</name>
+                    <title>I click "//a[text()='Samsung galaxy s6']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902587617' status='passed' stop='1779902588474'>
+                    <name>I wait for element "//a[text()='Add to cart']", 10</name>
+                    <title>I wait for element "//a[text()='Add to cart']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902588474' status='passed' stop='1779902588614'>
+                    <name>I click "//a[text()='Add to cart']"</name>
+                    <title>I click "//a[text()='Add to cart']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902588614' status='passed' stop='1779902589071'>
+                    <name>I accept popup</name>
+                    <title>I accept popup</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902589072' status='passed' stop='1779902589434'>
+                    <name>I click "//a[text()='Cart']"</name>
+                    <title>I click "//a[text()='Cart']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902589434' status='passed' stop='1779902590277'>
+                    <name>I wait for element "//td[contains(text(),'Samsung galaxy s6')]", 10</name>
+                    <title>I wait for element "//td[contains(text(),'Samsung galaxy s6')]", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779902590277' status='passed' stop='1779902590281'>
+                    <name>I see "Samsung galaxy s6"</name>
+                    <title>I see "Samsung galaxy s6"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

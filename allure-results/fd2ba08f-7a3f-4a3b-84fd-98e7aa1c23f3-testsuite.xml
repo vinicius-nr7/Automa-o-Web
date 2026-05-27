@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1779900857606' stop='1779900860697'>
+    <name>Navegação Demo Blaze:</name>
+    <title>Navegação Demo Blaze:</title>
+    <test-cases>
+        <test-case start='1779900857608' status='passed' stop='1779900860673'>
+            <name>validar categorias Phones, Laptops e Monitors</name>
+            <title>validar categorias Phones, Laptops e Monitors</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779900857901' status='passed' stop='1779900859519'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900859520' status='passed' stop='1779900859717'>
+                    <name>I click "//a[text()='Phones']"</name>
+                    <title>I click "//a[text()='Phones']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900859717' status='passed' stop='1779900860036'>
+                    <name>I wait for element "//a[text()='Samsung galaxy s6']", 10</name>
+                    <title>I wait for element "//a[text()='Samsung galaxy s6']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860036' status='passed' stop='1779900860041'>
+                    <name>I see "Samsung galaxy s6"</name>
+                    <title>I see "Samsung galaxy s6"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860041' status='passed' stop='1779900860213'>
+                    <name>I click "//a[text()='Laptops']"</name>
+                    <title>I click "//a[text()='Laptops']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860213' status='passed' stop='1779900860415'>
+                    <name>I wait for element "//a[text()='MacBook air']", 10</name>
+                    <title>I wait for element "//a[text()='MacBook air']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860416' status='passed' stop='1779900860420'>
+                    <name>I see "MacBook air"</name>
+                    <title>I see "MacBook air"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860420' status='passed' stop='1779900860568'>
+                    <name>I click "//a[text()='Monitors']"</name>
+                    <title>I click "//a[text()='Monitors']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860568' status='passed' stop='1779900860668'>
+                    <name>I wait for element "//a[text()='Apple monitor 24']", 10</name>
+                    <title>I wait for element "//a[text()='Apple monitor 24']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900860669' status='passed' stop='1779900860673'>
+                    <name>I see "Apple monitor 24"</name>
+                    <title>I see "Apple monitor 24"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,28 +1,31 @@
 /** @type {CodeceptJS.MainConfig} */
 exports.config = {
   name: 'automacao-codeceptjs',
-  tests: './Testes/*_test.js',   // procura todos os arquivos terminados em _test.js dentro da pasta Testes
+  tests: './Testes/*_test.js',
   output: './output',
   helpers: {
-    WebDriver: {
+    Playwright: {
       url: 'https://www.demoblaze.com',
-      browser: 'chrome',
-      restart: false,
+      browser: 'chromium',
+      show: true,
       windowSize: '1200x900',
-      smartWait: 5000,
-      waitForTimeout: 10000
+      waitForTimeout: 15000,
+      smartWait: 5000
     }
   },
-  include: {
-    I: './Testes/steps_file.js'  // steps_file também está dentro da pasta Testes
-  },
-  bootstrap: null,
-  teardown: null,
-  mocha: {},
+  include: { I: './Testes/steps_file.js' },
   plugins: {
-    screenshotOnFail: { enabled: true },
-    retryFailedStep: { enabled: true },
-    tryTo: { enabled: true },
-    htmlReporter: { enabled: true }
+    // O Allure usa automaticamente o output do screenshotOnFail se configurado corretamente
+    screenshotOnFail: {
+      enabled: true
+    },
+    retryFailedStep: {
+      enabled: true
+    },
+    allure: {
+      enabled: true,
+      require: '@codeceptjs/allure-legacy',
+      outputDir: './allure-results' 
+    }
   }
 }

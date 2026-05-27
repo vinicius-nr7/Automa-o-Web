@@ -1,0 +1,133 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1779900850717' stop='1779900857597'>
+    <name>Login Demo Blaze:</name>
+    <title>Login Demo Blaze:</title>
+    <test-cases>
+        <test-case start='1779900850718' status='passed' stop='1779900853991'>
+            <name>login com credenciais válidas</name>
+            <title>login com credenciais válidas</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779900851091' status='passed' stop='1779900852752'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900852752' status='passed' stop='1779900852793'>
+                    <name>I wait for element "//a[text()='Log in']", 10</name>
+                    <title>I wait for element "//a[text()='Log in']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900852794' status='passed' stop='1779900852968'>
+                    <name>I click "//a[text()='Log in']"</name>
+                    <title>I click "//a[text()='Log in']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900852968' status='passed' stop='1779900853014'>
+                    <name>I wait for visible "#logInModal", 10</name>
+                    <title>I wait for visible "#logInModal", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900853015' status='passed' stop='1779900853534'>
+                    <name>I fill field "#loginusername", "usuario1779897219807"</name>
+                    <title>I fill field "#loginusername", "usuario1779897219807"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900853534' status='passed' stop='1779900853817'>
+                    <name>I fill field "#loginpassword", "senha123"</name>
+                    <title>I fill field "#loginpassword", "senha123"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900853817' status='passed' stop='1779900853986'>
+                    <name>I click "//button[text()='Log in']"</name>
+                    <title>I click "//button[text()='Log in']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900853986' status='passed' stop='1779900853991'>
+                    <name>I wait for element "//a[@id='logout2' and contains(text(), 'Log out')]", 15</name>
+                    <title>I wait for element "//a[@id='logout2' and contains(text(), 'Log out')]", 15</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1779900854012' status='passed' stop='1779900857578'>
+            <name>login com credenciais inválidas</name>
+            <title>login com credenciais inválidas</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='codeceptjs'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1779900854328' status='passed' stop='1779900855952'>
+                    <name>I am on page "/"</name>
+                    <title>I am on page "/"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900855952' status='passed' stop='1779900855995'>
+                    <name>I wait for element "//a[text()='Log in']", 10</name>
+                    <title>I wait for element "//a[text()='Log in']", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900855995' status='passed' stop='1779900856156'>
+                    <name>I click "//a[text()='Log in']"</name>
+                    <title>I click "//a[text()='Log in']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900856157' status='passed' stop='1779900856253'>
+                    <name>I wait for visible "#logInModal", 10</name>
+                    <title>I wait for visible "#logInModal", 10</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900856253' status='passed' stop='1779900856635'>
+                    <name>I fill field "#loginusername", "usuarioErrado"</name>
+                    <title>I fill field "#loginusername", "usuarioErrado"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900856636' status='passed' stop='1779900856952'>
+                    <name>I fill field "#loginpassword", "senhaErrada"</name>
+                    <title>I fill field "#loginpassword", "senhaErrada"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900856953' status='passed' stop='1779900857103'>
+                    <name>I click "//button[text()='Log in']"</name>
+                    <title>I click "//button[text()='Log in']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900857103' status='passed' stop='1779900857570'>
+                    <name>I accept popup</name>
+                    <title>I accept popup</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1779900857570' status='passed' stop='1779900857578'>
+                    <name>I dont see element "//a[@id='logout2']"</name>
+                    <title>I dont see element "//a[@id='logout2']"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
