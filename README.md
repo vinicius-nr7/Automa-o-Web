@@ -1,88 +1,120 @@
-automacao-codeceptjs
-Repositório: [https://github.com/vinicius-nr7/Automacao-Codeceptjs.git]
+# Automação de Testes com CodeceptJS
 
-Automação de testes web para o site https://www.demoblaze.com utilizando CodeceptJS e Playwright.
+Projeto de automação web usando CodeceptJS, Playwright e WebdriverIO para testar a aplicação de demonstração Demoblaze.
 
-Estrutura do projeto
-codecept.conf.js — Configuração principal do CodeceptJS.
+## Visão Geral
 
-package.json — Dependências e scripts de execução do projeto.
+Este repositório contém testes automatizados em JavaScript para validar fluxos de navegação, cadastro, login, carrinho e checkout.
+O framework principal é o CodeceptJS, com Playwright configurado para abrir o navegador Chromium em modo visível.
 
-Testes/ — Arquivos de testes (Cadastro, Login, Carrinho, Checkout, Navegação).
+## Conteúdo do Projeto
 
-Testes/steps_file.js — Definições de passos customizados.
+- `codecept.conf.js` - Configuração do CodeceptJS, incluindo URL base, browser, timeout e plugins.
+- `package.json` - Dependências e scripts de execução.
+- `Testes/` - Pasta com os arquivos de teste e o arquivo de passos (`steps_file.js`).
+- `output/` - Diretório padrão de logs e screenshots gerados pelos testes.
+- `allure-results/` - Resultados de teste para gerar relatórios Allure.
+- `allure-report/` - Relatório Allure gerado (artefatos estáticos).
+- `images-docs/` - Imagens de documentação usadas no projeto e no relatório.
 
-output/ — Capturas de tela de falhas.
+## Pré-requisitos
 
-allure-results/ — Dados brutos das execuções (gerados automaticamente).
+- Node.js instalado (recomenda-se versão 18 ou superior).
+- npm disponível no ambiente.
+- Conexão com a internet para acessar `https://www.demoblaze.com`.
 
-allure-report/ — Relatórios visuais gerados.
+## Instalação
 
-Pré-requisitos
-Node.js instalado.
+1. Abra o terminal na raiz do projeto.
+2. Instale as dependências:
 
-Google Chrome instalado.
-
-Terminal aberto na pasta raiz do projeto.
-
-Instalação
-No terminal, execute:
-
-Bash
+```bash
 npm install
-Isso instalará o codeceptjs, playwright, @codeceptjs/allure-legacy e allure-commandline.
+```
 
-Como rodar os testes
-Rodar todos os testes
-Bash
-npm run test
-Rodar testes específicos por suíte
-O projeto possui scripts configurados para facilitar a execução:
+## Como Executar
 
+1. Abra o terminal na raiz do projeto.
+2. Certifique-se de que as dependências foram instaladas:
+
+```bash
+npm install
+```
+
+3. Execute todos os testes de automação:
+
+```bash
+npm test
+```
+
+4. Para executar um teste específico, use um dos comandos abaixo:
+
+```bash
 npm run test:navegacao
-
 npm run test:cadastro
-
 npm run test:login
-
 npm run test:carrinho
-
 npm run test:checkout
+```
 
-Rodar cenário específico (Filtro por nome)
-Você pode usar o --grep para buscar um cenário específico:
+5. O CodeceptJS iniciará o navegador Chromium e executará os passos definidos nos testes.
+6. Depois da execução, verifique:
+   - `output/` para logs, screenshots e evidências de falha;
+   - `allure-results/` para dados brutos do relatório Allure.
 
-Bash
-npx codeceptjs run --grep "NOME_DO_CENARIO" --steps
-Documentação Visual com Allure Report
-O projeto utiliza o Allure Report para gerar dashboards detalhados.
+### Execução recomendada
 
-1. Executar testes e gerar dados
-Ao rodar seus testes normalmente, o plugin criará os arquivos de log na pasta allure-results:
+- Use `npm test` para rodar a suíte completa.
+- Use comandos específicos quando quiser validar apenas um fluxo de teste.
+- Mantenha `codecept.conf.js` atualizado se precisar alterar a URL base ou o navegador.
 
-Bash
-npx codeceptjs run --steps
-2. Gerar o relatório visual
-Transforme os resultados em um painel interativo navegável:
+Os testes são executados com o modo `--steps`, exibindo cada passo no terminal.
 
-Bash
-npx allure-commandline generate allure-results -o allure-report --clean
-3. Abrir o relatório
-Visualize o dashboard completo no seu navegador padrão:
+## Configuração de Navegador
 
-Bash
-npx allure-commandline open allure-report
-Observações
-O navegador configurado é o chromium.
+O projeto usa Playwright com as seguintes configurações em `codecept.conf.js`:
 
-O tempo de espera inteligente (smartWait) está configurado para 5000ms.
+- URL base: `https://www.demoblaze.com`
+- Navegador: `chromium`
+- `show: true` (o navegador é exibido durante a execução)
+- Tamanho da janela: `1200x900`
 
-Sempre que houver falha, o sistema gera automaticamente uma captura de tela na pasta output.
+## Relatórios
 
-Como enviar para o GitHub:
-Após salvar este conteúdo no README.md, execute no seu terminal:
+- `output/` contém logs e evidências como screenshots de falha.
+- `allure-results/` contém o resultado bruto para gerar o relatório Allure.
+- `allure-report/` pode ser usado para visualizar o relatório já gerado.
+- `images-docs/` contém imagens de apoio à documentação, úteis para relatórios e referência visual.
 
-Bash
-git add README.md
-git commit -m "docs: atualização completa da documentação e guia do Allure Report"
-git push origin main
+> Para gerar o relatório Allure manualmente, instale o CLI do Allure globalmente ou use o binário local conforme disponível.
+
+### Gerar relatório Allure
+
+Se você instalou o Allure CLI globalmente:
+
+```bash
+allure generate allure-results --clean -o allure-report
+allure open allure-report
+```
+
+Se preferir usar o binário local do projeto:
+
+```bash
+npx allure generate allure-results --clean -o allure-report
+npx allure open allure-report
+```
+
+## Estrutura de Testes
+
+- `navegacao_test.js` - Valida a navegação geral do site.
+- `cadastro_test.js` - Testa o fluxo de cadastro/registro.
+- `login_test.js` - Testa o fluxo de login.
+- `carrinho_test.js` - Testa a adição de produtos ao carrinho.
+- `checkout_test.js` - Testa o processo de finalização da compra.
+- `steps_file.js` - Contém os passos personalizados do CodeceptJS usados pelos testes.
+
+## Observações
+
+- Atualize `codecept.conf.js` caso deseje mudar o navegador ou a URL base.
+- Se ocorrerem falhas, verifique `output/` para screenshots e logs.
+- O projeto já inclui integração com Allure para rastreamento de resultados de teste.
