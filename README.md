@@ -7,6 +7,18 @@ Projeto de automação web usando CodeceptJS, Playwright e WebdriverIO para test
 Este repositório contém testes automatizados em JavaScript para validar fluxos de navegação, cadastro, login, carrinho e checkout.
 O framework principal é o CodeceptJS, com Playwright configurado para abrir o navegador Chromium em modo visível.
 
+## Imagens em Destaque
+
+Abaixo estão algumas capturas de tela geradas pelo projeto, exibidas diretamente no GitHub como destaque visual do fluxo de testes:
+
+![Execução de teste 1](images-docs/Captura%20de%20tela%202026-05-27%20141022.jpg)
+
+![Execução de teste 2](images-docs/Captura%20de%20tela%202026-05-27%20141323.jpg)
+
+![Execução de teste 3](images-docs/Captura%20de%20tela%202026-05-27%20141431.jpg)
+
+![Execução de teste 4](images-docs/Captura%20de%20tela%202026-05-27%20141506.jpg)
+
 ## Conteúdo do Projeto
 
 - `codecept.conf.js` - Configuração do CodeceptJS, incluindo URL base, browser, timeout e plugins.
