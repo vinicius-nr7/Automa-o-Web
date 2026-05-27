@@ -4,12 +4,61 @@ Projeto de automação web usando CodeceptJS, Playwright e WebdriverIO para test
 
 ## Visão Geral
 
-Este repositório contém testes automatizados em JavaScript para validar fluxos de navegação, cadastro, login, carrinho e checkout.
+Este repositório contém uma suíte profissional de testes automatizados em JavaScript para validar os principais fluxos da aplicação Demoblaze: navegação, cadastro, login, carrinho e checkout.
 O framework principal é o CodeceptJS, com Playwright configurado para abrir o navegador Chromium em modo visível.
 
-## Imagens em Destaque
+## Como Executar os Testes
 
-Abaixo estão as capturas de tela do projeto em uma galeria, exibidas diretamente no GitHub para destacar as evidências visuais dos testes.
+1. Abra o terminal na raiz do projeto.
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Execute a suíte completa:
+
+```bash
+npm test
+```
+
+4. Execute casos específicos quando desejar validar apenas um fluxo:
+
+```bash
+npm run test:navegacao
+npm run test:cadastro
+npm run test:login
+npm run test:carrinho
+npm run test:checkout
+```
+
+5. O CodeceptJS iniciará o Chromium e exibirá cada passo no terminal, usando o modo `--steps` para maior transparência.
+
+### Recomendações de execução
+
+- Use `npm test` para validar a suíte completa antes de uma apresentação ou pull request.
+- Use os comandos específicos para depurar ou demonstrar um fluxo isolado.
+- Atualize `codecept.conf.js` se precisar alterar a URL base ou o navegador.
+
+## Geração da Documentação Allure
+
+Após a execução dos testes, gere o relatório Allure a partir dos resultados brutos:
+
+```bash
+npx allure generate allure-results --clean -o allure-report
+```
+
+Em seguida, abra a documentação gerada:
+
+```bash
+npx allure open allure-report
+```
+
+A documentação do Allure será exibida no navegador e apresenta métricas, gráficos, histórico, etapas e evidências de cada execução.
+
+## Sobre as Imagens
+
+As imagens abaixo são capturas da documentação do Allure gerada a partir da execução dos testes. Elas mostram a apresentação visual dos relatórios, incluindo resultados e evidências de validação.
 
 | Imagem 1 | Imagem 2 | Imagem 3 | Imagem 4 |
 | --- | --- | --- | --- |
@@ -44,44 +93,6 @@ Abaixo estão as capturas de tela do projeto em uma galeria, exibidas diretament
 npm install
 ```
 
-## Como Executar
-
-1. Abra o terminal na raiz do projeto.
-2. Certifique-se de que as dependências foram instaladas:
-
-```bash
-npm install
-```
-
-3. Execute todos os testes de automação:
-
-```bash
-npm test
-```
-
-4. Para executar um teste específico, use um dos comandos abaixo:
-
-```bash
-npm run test:navegacao
-npm run test:cadastro
-npm run test:login
-npm run test:carrinho
-npm run test:checkout
-```
-
-5. O CodeceptJS iniciará o navegador Chromium e executará os passos definidos nos testes.
-6. Depois da execução, verifique:
-   - `output/` para logs, screenshots e evidências de falha;
-   - `allure-results/` para dados brutos do relatório Allure.
-
-### Execução recomendada
-
-- Use `npm test` para rodar a suíte completa.
-- Use comandos específicos quando quiser validar apenas um fluxo de teste.
-- Mantenha `codecept.conf.js` atualizado se precisar alterar a URL base ou o navegador.
-
-Os testes são executados com o modo `--steps`, exibindo cada passo no terminal.
-
 ## Configuração de Navegador
 
 O projeto usa Playwright com as seguintes configurações em `codecept.conf.js`:
@@ -98,18 +109,7 @@ O projeto usa Playwright com as seguintes configurações em `codecept.conf.js`:
 - `allure-report/` pode ser usado para visualizar o relatório já gerado.
 - `images-docs/` contém imagens de apoio à documentação, úteis para relatórios e referência visual.
 
-> Para gerar o relatório Allure manualmente, instale o CLI do Allure globalmente ou use o binário local conforme disponível.
-
-### Gerar relatório Allure
-
-Se você instalou o Allure CLI globalmente:
-
-```bash
-allure generate allure-results --clean -o allure-report
-allure open allure-report
-```
-
-Se preferir usar o binário local do projeto:
+> Para gerar o relatório Allure manualmente, use o binário local do projeto:
 
 ```bash
 npx allure generate allure-results --clean -o allure-report
